@@ -1,0 +1,6 @@
+ID Name Age Height Weight
+23 safsa 3 4 22
+2 Alice 22 160 55
+1 John 20 170 65
+4 Charlie 23 175 68
+5 Diana 24 165 60

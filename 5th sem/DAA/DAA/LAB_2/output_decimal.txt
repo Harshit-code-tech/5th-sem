@@ -1,0 +1,4 @@
+The binary equivalent of 10 is 1010
+The binary equivalent of 15 is 1111
+The binary equivalent of 8 is 1000
+The binary equivalent of 128 is 10000000

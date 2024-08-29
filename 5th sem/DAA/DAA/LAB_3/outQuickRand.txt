@@ -1,0 +1,6 @@
+Before sorting:
+42 17 89 5 73 26 48 92 34 56 
+After sorting:
+5 17 26 34 42 48 56 73 89 92 
+Number of Comparisons: 34
+Execution Time: 699 nanoseconds

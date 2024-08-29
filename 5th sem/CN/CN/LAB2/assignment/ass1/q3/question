@@ -1,0 +1,12 @@
+3.  Question: Implement a UDP-based file transfer program in C. The client should send a file name to the server, and the server should send the contents of the requested file back to the client.
+Requirements:
+The client should send the file name to the server.
+The server should listen on a specific port for the file name request.
+The server should read the contents of the requested file and send it back to the client in chunks.
+The client should receive the file contents and save it to a new file.
+Both client and server should display appropriate messages for file transfer status.
+Hints:
+Use sendto and recvfrom functions for communication.
+Implement error handling for cases where the file does not exist on the server.
+Consider using a buffer to read and send file chunks in a loop until the entire file is transferred.
+

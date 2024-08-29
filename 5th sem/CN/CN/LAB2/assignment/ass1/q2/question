@@ -1,0 +1,14 @@
+
+2. Simple Server-Client Chat Application (UDP)
+Question: Implement a simple server-client chat application using UDP in C. The server should be able to receive messages from the client and respond back. Both the server and the client should be able to send and receive messages continuously until one of them sends a "bye" message to terminate the chat.
+Requirements:
+The client should send messages to the server on a specific port.
+The server should listen on the same port for incoming messages.
+Both client and server should be able to send and receive messages in a loop.
+The chat should continue until either the client or the server sends a "bye" message.
+Hints:
+Use sendto and recvfrom functions for communication.
+Implement a loop to handle continuous message sending and receiving.
+Check for the "bye" message to break out of the loop and terminate the chat.
+Display the messages sent and received on the console for both client and server.
+

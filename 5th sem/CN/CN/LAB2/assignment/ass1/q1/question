@@ -1,0 +1,12 @@
+Question: Implement a UDP server in C that listens for messages from clients. When a message is received, the server should respond with the length of the message. The client should send a message to the server and print the length of the message received in the response.
+Requirements:
+The client should send a message to the server on a specific port.
+The server should listen on the same port for incoming messages.
+The server should respond with the length of the received message.
+The client should print the length of the message received from the server.
+Hints:
+Use sendto and recvfrom functions for communication.
+Use the strlen function to calculate the length of the message.
+Ensure the client and server use the same port number for communication.
+Display the messages and lengths sent and received on the console.
+
