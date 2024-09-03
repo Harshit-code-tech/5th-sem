@@ -20,17 +20,21 @@ void swap(Person *a, Person *b) {
     *a = *b;
     *b = temp;
 }
+int leftChild(int i) {
+    return 2 * i + 1;
+}
+int rightChild(int i) {
+    return 2 * i + 2;
+}
 
 void minHeapify(int n, int i) {
     int smallest = i;
-    int left = 2 * i + 1;
-    int right = 2 * i + 2;
 
-    if (left < n && persons[left].age < persons[smallest].age)
-        smallest = left;
+    if (leftChild(i) < n && persons[leftChild(i)].age < persons[smallest].age)
+        smallest = leftChild(i);
 
-    if (right < n && persons[right].age < persons[smallest].age)
-        smallest = right;
+    if (rightChild(i) < n && persons[rightChild(i)].age < persons[smallest].age)
+        smallest = rightChild(i);
 
     if (smallest != i) {
         swap(&persons[i], &persons[smallest]);
@@ -45,14 +49,12 @@ void buildMinHeap() {
 
 void maxHeapify(int n, int i) {
     int largest = i;
-    int left = 2 * i + 1;
-    int right = 2 * i + 2;
 
-    if (left < n && persons[left].weight > persons[largest].weight)
-        largest = left;
+    if (leftChild(i) < n && persons[leftChild(i)].weight > persons[largest].weight)
+        largest = leftChild(i);
 
-    if (right < n && persons[right].weight > persons[largest].weight)
-        largest = right;
+    if (rightChild(i) < n && persons[rightChild(i)].weight > persons[largest].weight)
+        largest = rightChild(i);
 
     if (largest != i) {
         swap(&persons[i], &persons[largest]);
