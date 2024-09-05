@@ -1,0 +1,2 @@
+UDP client server code for series of 5 numbers then calculating sum, average and median of that numbers then sending this to client and printing this information on client side
+also print client as well as server information
