@@ -1,0 +1,4 @@
+Hello, this is a sample text file.
+It contains multiple lines of text.
+This file is used to demonstrate the file transfer between a TCP client and server.
+Thank you!

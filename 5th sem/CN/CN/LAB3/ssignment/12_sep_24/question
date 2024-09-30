@@ -1,0 +1,16 @@
+Question:
+Write a C program to implement a TCP-based client-server application where the client sends a file to the server, and the server stores the received file on its local disk. Include the following requirements:
+
+Client:
+
+	1.	The client program should take the server IP address, port number, and file name as command-line arguments.
+	2.	The client should open the specified file, read its contents, and send it to the server in chunks (use a buffer).
+	3.	After sending the file, the client should wait for an acknowledgment from the server indicating that the file was received successfully.
+	4.	The client should print the acknowledgment message from the server and terminate.
+
+Server:
+
+	1.	The server program should listen on a specified port number (given as a command-line argument).
+	2.	Upon receiving a connection request from a client, the server should create a new file (with a predefined name or extension, e.g., received_file.txt) and store the data received from the client in this file.
+	3.	After the file transfer is complete, the server should send an acknowledgment message back to the client (e.g., “File received successfully”).
+	4.	The server should handle multiple client connections using a loop and process each client sequentially.
