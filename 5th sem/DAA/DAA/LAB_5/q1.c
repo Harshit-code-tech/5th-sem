@@ -86,6 +86,7 @@ int main() {
     float max_profit = fractionalKnapsack(items, n, knapsack_capacity);
 
     printf("Maximum profit: %.6f\n", max_profit);
+    printf("22052982: Harshit Ghosh\n");
 
     return 0;
 }
