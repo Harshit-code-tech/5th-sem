@@ -1,0 +1,10 @@
+server can handle multiple client using fork...a tcp connection...minimum of 3 clients
+server receives alphabet from of minimum size 5 characters...
+server sends client a menu "
+1) upper case all charecters
+2)lower case all charecters
+3) count total no. of charecters
+4) reverse the charecters 
+"
+server receives what action to perform from client and then send the output to client..
+the client receives the final result and print it.
